@@ -1,0 +1,29 @@
+{
+    "name": "kevpercy/password-generator",
+	"description": "A simple random password generator for PHP",
+	"license": "MIT",
+	"keywords": ["password"],
+	"authors": [
+		{
+			"name": "Kevin Percy",
+			"email": "kevin@kevinpercy.com",
+			"homepage": "https://www.github.com/kevpercy",
+			"role": "Developer"
+		}
+	],
+    "autoload": {
+        "psr-4" : {
+            "KevPercy\\PasswordGenerator\\" : "src"
+        }
+    },
+	"extra": {
+		"laravel": {
+			"providers": [
+				"KevPercy\\PasswordGenerator\\PasswordGeneratorServiceProvider"
+			],
+			"aliases": {
+				"Password": "KevPercy\\PasswordGenerator\\Facade"
+			}
+		}
+	},
+}
