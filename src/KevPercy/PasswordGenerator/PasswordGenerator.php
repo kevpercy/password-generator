@@ -15,6 +15,8 @@ class PasswordGenerator
 	
 	public static function generate($length = 30, $uppercase = true, $numbers = true, $special_chars = true)
 	{
+		$initial_length = $length;
+		
 		$groups = [self::LOWERCASE];
 		
 		if ($uppercase) {
@@ -44,6 +46,6 @@ class PasswordGenerator
 			}
 		} while ($length > 0);
 		
-		return str_shuffle($password);
+		return str_shuffle(substr($password, 0, $initial_length));
 	}
 }
