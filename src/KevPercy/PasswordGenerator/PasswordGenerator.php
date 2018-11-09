@@ -15,6 +15,10 @@ class PasswordGenerator
 	
 	public static function generate($length = 30, $uppercase = true, $numbers = true, $special_chars = true)
 	{
+		if ($length < 8) {
+			$length = 8;
+		}
+		
 		$initial_length = $length;
 		
 		$groups = [self::LOWERCASE];
