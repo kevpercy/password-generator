@@ -45,4 +45,4 @@ Whether to include special characters in the output. Default: true.
 Lowercase letters are always included, regardless of the other options.
 
 ## License
-This library is licensed under the MIT license. Please see [License][LICENSE] file for more information.
+This library is licensed under the MIT license. Please see [License](LICENSE) file for more information.
