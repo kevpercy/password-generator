@@ -16,8 +16,8 @@ use KevPercy\PasswordGenerator\PasswordGenerator;
 
 ...
 
-$password = PasswordGenerator::generate();
-$alphanumeric = PasswordGenerator::generate(8, true, true, false);
+$password = PasswordGenerator::generate(); // 30rGnJ>;2k1Y$W9ji0ve0,tYNx.WYV
+$alphanumeric = PasswordGenerator::generate(8, true, true, false); // ms7rS51E
 ```
 ## Options
 **PasswordGenerator::generate($length = 30, $uppercase = true, $numbers = true, $special_chars = true)**
